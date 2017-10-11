@@ -8,11 +8,18 @@ namespace SuggestionBox.Models
 {
     public class SuggestionModel
     {
+        private string name;
         private string topic;
         private string suggestion;
 
         [Key]
         public int RecordNum { get; set; }
+
+        public string Name
+        {
+            get { return this.name; }
+            set { this.name = value; }
+        }
 
         public string Topic
         {

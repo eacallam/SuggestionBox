@@ -168,6 +168,15 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201710100023556_InitialCreate.cs" />
+    <Compile Include="Migrations\201710100023556_InitialCreate.Designer.cs">
+      <DependentUpon>201710100023556_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710110020350_AddName.cs" />
+    <Compile Include="Migrations\201710110020350_AddName.Designer.cs">
+      <DependentUpon>201710110020350_AddName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\SuggestionBoxContext.cs" />
     <Compile Include="Models\SuggestionModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -236,6 +245,14 @@
     <None Include="Project_Readme.html" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201710100023556_InitialCreate.resx">
+      <DependentUpon>201710100023556_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710110020350_AddName.resx">
+      <DependentUpon>201710110020350_AddName.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
